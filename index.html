@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(20, 20, 20);
+        }
+        canvas {
+            background-color: rgb(20, 20, 20);
+        }
+        #counter {
+            color: salmon;
+            text-align: center;
+            font-size: 5rem;
+            display: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        #countdown-wrapper {
+            text-align: center;
+            color: salmon;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        h2 {
+            font-size: 3rem;
+            line-height: 5rem;
+        }
+        
+    </style>
+</head>
+<body id = "body" onload="OnLoad()">
+    <p id="counter">1000</p>
+    
+    <canvas id="drawingSurface" ></canvas>
+    
+    <div id="countdown-wrapper">
+        <h2><span id="countdown">5</span> seconds</h2>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
